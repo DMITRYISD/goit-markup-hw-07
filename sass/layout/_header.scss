@@ -1,0 +1,111 @@
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-index {
+  border: 1px solid var(--border-header-color);
+}
+.logo-link {
+  display: inline-block;
+  padding: 20px 0px;
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 93px;
+}
+.logo-link-accent {
+  color: var(--title-text-color);
+}
+.navigation-menu {
+  display: flex;
+  align-items: center;
+}
+.navigation-menu__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    opacity: 1;
+    background-color: var(--accent-color);
+  }
+}
+.navigation-menu__item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.contact-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contact-menu-item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.contact-menu-item-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--secondary-title-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .contact-menu-item-link:hover &,
+  .contact-menu-item-link:focus & {
+    fill: var(--accent-color);
+  }
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--secondary-title-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .contact-menu-item-link:hover &,
+  .contact-menu-item-link:focus & {
+    fill: var(--accent-color);
+  }
+}

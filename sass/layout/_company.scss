@@ -1,0 +1,35 @@
+.company-list {
+  display: flex;
+  justify-content: space-between;
+}
+.company-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+.company-list-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--social-accent-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .company-list-link:hover &,
+  .company-list-link:focus & {
+    fill: var(--accent-color);
+  }
+}

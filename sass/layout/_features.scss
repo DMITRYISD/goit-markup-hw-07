@@ -1,0 +1,28 @@
+.features-menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+.features-menu-list-item {
+  flex-basis: 270px;
+}
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: var(--accent-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-menu {
+  width: 70px;
+  height: 70px;
+}
